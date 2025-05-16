@@ -1,0 +1,24 @@
+[package]
+name = "hyperliquid-mini"
+version = "0.1.0"
+edition = "2024"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1.0", features = ["derive", "rc"] }
+serde_with = "3.4.0"
+serde_json = "1.0"
+eyre = "0.6.8"
+tokio = { version = "1.33.0", features = ["full"] }
+futures = "0.3.28"
+tracing = "0.1.39"
+reqwest = { version = "0.12.4", features = ["json"] }
+http = "1.1.0"
+alloy = { version = "0.11", features = ["eip712"] }
+thiserror = "2"
+static_assertions = "1.1.0"
+rmp-serde = "1.1.2"
+uuid = "1.7.0"
+hex = "0.4"
+malachite = "0.6.0"
